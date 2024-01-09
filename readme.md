@@ -12,3 +12,5 @@ Tech used: CSS, HTML
 ![Screenshot](screenshots/sc2.png)
 
 ![Screenshot](screenshots/sc3.png)
+
+This project is an [assignment](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage) from TOP's [Fullstack Javascript Developer Course](https://www.theodinproject.com/paths/full-stack-javascript). 
