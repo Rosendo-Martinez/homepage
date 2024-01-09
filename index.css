@@ -1,0 +1,206 @@
+body, html {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* HERO */
+#headshot {
+    display: block;
+    max-width: 300px;
+    /* height: 300px; */
+    /* height: 100%;
+    width: 100%; */
+    /* object-fit: cover; */
+}
+
+#headshot-container {
+    position: relative;
+}
+
+#hero-title {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.hero-container {
+    /* min-width: 100%; */
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#about-me-links-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+/* Background of Hero */
+
+.hero-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+    transform: skewY(-9deg);
+    transform-origin: top left;
+    z-index: -1;
+}
+
+/* About me */
+
+.about-me {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.5rem;
+    /* max-width: 800px; */
+    min-height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+a:link, a:visited  {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#about-me-links-container > a {
+    margin-left: 1rem;
+}
+
+/* WORK */
+.work h2 {
+    padding: 0 2rem;
+}
+
+.card {
+    /* Desktop only */
+    width: 300px;
+    min-height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.projects {
+    padding: 0 1rem 4rem 1rem;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, 300px);
+    max-width: 1100px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.screenshot-container {
+    height: 275px;
+    background-color: #ff9d2f;
+}
+
+.projects-container {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.information-container {
+    padding: 1rem;
+}
+
+.projects .small-icon {
+    /* display: inline-block; */
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.name-and-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container > a {
+    margin-left: 8px;
+    /* display: inline-block;
+    display: flex;
+    margin: auto; */
+}
+
+/* Contact Me */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.contact-image {
+    max-width: 350px;
+    display: block;
+}
+
+.left {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+}
+
+/* Work & Contact */
+
+.work-and-contact-container {
+    background: linear-gradient(to right, #ff9d2f, #ff6126);
+}
+
+.work-container {
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .about-me {
+        min-height: initial;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-image {
+        max-width: 70%;
+    }
+}
